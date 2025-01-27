@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sheinpipi</title>
+    <title>𝐒𝐭✰𝐫𝐠𝐢𝐫𝐥</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            
+           <h1>・┆✦ʚ♡ɞ✦ ┆・</h1>
+            <h1>𝐒𝐭✰𝐫𝐠𝐢𝐫𝐥</h1>
+             
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+   <img src="https://i.pinimg.com/736x/d0/51/43/d051436004b4527ba73587d252d8ca12.jpg" alt="">
+    <section class="carrossel">
+        <div class="slick-carousel">
+            <img src="imagens/roup1.jpg" alt="Imagem 1">
+            <img src="imagens/roup2.jpg" alt="Imagem 2">
+            <img src="imagens/roup3.jpg" alt="Imagem 3">
+        </div>
+    </section>
+   
+    <section class="promocoes">
+        <h2>𝒫𝓇𝑜𝓂𝑜çõ𝑒𝓈ִ ࣪𖤐</h2>
+        <p>Confira as ofertas especiais da semana!</p>
+    </section>
+
+    <section class="produtos">
+        <div class="produto">
+            <img src="imagens/saia19.jpg" alt="Produto 1">
+            <div class="detalhes">
+                <h3>Blusa Casual</h3>
+                <p>R$ 99,90</p>
+                <button class="btn-comprar">Comprar Agora</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="imagens/shein.jpg" alt="Produto 2">
+            <div class="detalhes">
+                <h3>Vestido Floral</h3>
+                <p>R$ 159,90</p>
+                <button class="btn-comprar">Comprar Agora</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="imagens/botashein.jpg" alt="Produto 3">
+            <div class="detalhes">
+                <h3>Saia A-Line</h3>
+                <p>R$ 79,90</p>
+                <button class="btn-comprar">Comprar Agora</button>
+            </div>
+        </div>
+    </section>
     
+    <footer>
+        
+        <p>&copy; 2025 Moda Fofa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                fade: true
+            });
+        });
+    </script>
+    <img src="https://i.pinimg.com/736x/d0/51/43/d051436004b4527ba73587d252d8ca12.jpg" alt="">
 </body>
 </html>
