@@ -1,0 +1,297 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e9fbff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #3b007e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Logo dentro do cabeçalho */
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover no link do menu */
+nav ul li a:hover {
+    color: #d0a3f3;
+}
+
+/* Estilos da seção de detalhes */
+.detalhes {
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.detalhes h3 {
+    font-size: 1.3rem;
+    color: #6a4c9c;
+    margin-bottom: 10px;
+}
+
+.detalhes p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Estilo da imagem */
+img {
+    width: 60%; /* A imagem ocupa 60% da largura do container */
+    max-width: 600px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #3b007e; /* Mantém o fundo roxo */
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Aumenta o espaçamento do rodapé */
+    margin-top: 40px; /* Adiciona espaço acima do rodapé */
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2rem; /* Diminui o tamanho da logo para telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Empilha os itens do menu em telas menores */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .detalhes {
+        padding: 10px;
+    }
+
+    img {
+        width: 50%; /* Aumenta a largura da imagem em telas menores */
+        max-width: 80%; /* Garantir que a imagem não ultrapasse a tela */
+    }
+}
+/* Estilo geral para a seção sobre a empresa */
+.sobre {
+    background-color: #ffffff; /* Fundo branco para destacar o conteúdo */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1000px; /* Limita a largura máxima */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título principal da seção */
+.sobre h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3b007e; /* Cor roxa para o título */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Transformação para maiúsculas */
+}
+
+/* Subtítulos (como "Nossa Filosofia", etc.) */
+.sobre h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #6a4c9c; /* Cor roxa suave para os subtítulos */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3b007e; /* Linha sutil abaixo do subtítulo */
+    padding-bottom: 5px;
+}
+
+/* Parágrafos de texto */
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Listagem de benefícios (como a lista de razões para escolher a marca) */
+.sobre ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sobre ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.sobre ul li::before {
+    content: '✔'; /* Ícone de check */
+    position: absolute;
+    left: 0;
+    color: #3b007e; /* Cor roxa para os ícones */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Chamada para ação no final */
+.sobre h3:last-of-type {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3b007e;
+    margin-top: 40px;
+}
+
+.sobre p:last-of-type {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Efeito de hover nos parágrafos e listas para interatividade */
+.sobre p:hover,
+.sobre ul li:hover {
+    color: #3b007e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+/* Estilo para a imagem */
+img {
+    width: 80%; /* A imagem ocupa 80% da largura disponível */
+    height: px; /* Define uma altura fixa de 300px para a imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    display: block; /* Evita o espaço em branco abaixo da imagem */
+    margin: 20px auto; /* Centraliza a imagem e adiciona margem em cima e embaixo */
+}
+/* Estilo para a seção de comentário */
+.deixe-comentario {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título */
+.deixe-comentario h2 {
+    font-size: 1.5rem;
+    color: #3b007e;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o campo de texto */
+.deixe-comentario textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none; /* Impede o redimensionamento da área */
+}
+
+/* Estilo para o botão de envio */
+.deixe-comentario button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3b007e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deixe-comentario button:hover {
+    background-color: #6a4c9c;
+}
+/* Estilo para os comentários */
+.comentarios {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #3b007e;
+}
+
+.comentario {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentario p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.comentario .estrela {
+    color: #f4b400; /* Cor amarela para as estrelas */
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Estilo para o nome do cliente */
+.comentario strong {
+    font-weight: bold;
+    color: #6a4c9c;
+}
