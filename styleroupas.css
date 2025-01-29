@@ -1,0 +1,109 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #ff4081, #ff80ab);
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.categorias {
+    margin: 20px 0;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.categorias ul li a {
+    text-decoration: none;
+    color: #d81b60;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.categorias ul li a:hover {
+    color: #880e4f;
+}
+
+.produto {
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-comprar {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-comprar:hover {
+    background: #c51162;
+}
+
+footer {
+    background-color: #3b007e; /* Mantém o fundo roxo */
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Aumenta o espaçamento do rodapé */
+    margin-top: 40px; /* Adiciona espaço acima do rodapé */
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+}
